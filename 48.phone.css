@@ -1,0 +1,98 @@
+html{
+    scroll-behavior: smooth;
+}
+#navbar {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#navbar ul li a {
+    font-size: 0.7rem;
+    margin-bottom:2px;
+    padding:3px;
+}
+#navbar::before{
+   opacity: 1; 
+}
+#logo img{
+    height: 30px;
+    width: 30px;
+    padding: 2px;
+    margin: 5px;
+}
+#navbar ul li{
+    margin:0px;
+    padding:0px 2px;
+}
+
+#home h1{
+    font-size: 1rem;
+}
+#home p{
+    font-size: 0.6rem;
+    
+}
+
+#home::before{
+    height:110%;
+}
+.btn{
+    padding:5px 15px;
+    margin:20px 20px;
+    background-color: rgb(5, 5, 5);
+    color:rgb(255, 255, 255);
+    font-size:0.8rem
+    
+}
+.btn:active{
+    background-color: rgb(255, 255, 255);
+    color:rgb(5, 5, 5);
+    
+}
+
+
+#content{
+    margin-top:40px;    
+    background-color: rgb(0, 0, 0);
+}
+#content::before{
+    background: none;
+    
+}
+#content h1 {
+    font-size: 2rem;
+    /* color:black; */
+    margin-top: 70px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+#content .box{
+    background-color: rgba(170, 170, 170, 0.178);
+   flex-direction: column;
+    height:20rem;
+    width:auto;
+    margin:20px 15px;
+    padding:5px;
+    border-radius: 20px;
+    
+    
+}
+#content .box h3{
+    margin:10px;
+    font-size: 1.1rem;
+    
+   
+}
+#content .box p{
+    font-size: 0.7rem;
+   
+}
+#content .cnt{
+    text-align: center;
+}
+
+#content .box img{
+    height:50%;
+    width:100%;
+
+}

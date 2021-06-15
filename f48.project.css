@@ -1,0 +1,221 @@
+/* CSS Reset */
+ *{
+    margin:0px;
+    padding:0px;
+    transition:all 0.2s ease-in-out 0s;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:50px;
+}
+
+#navbar{
+    display:flex;
+    position:sticky;
+    top:0px;
+    z-index: 1;
+   
+}
+#navbar::before{
+    content:"";
+    background-color: #e5bdae;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.8;
+}
+/* navbar logo and image */
+#logo{
+    margin:0px 20px;
+    padding:0px 10px;
+    display:flex;
+}
+#logo img{
+    height: 40px;
+    width: 40px;
+    border-radius: 200px;
+    background-color: #1f2830;
+    padding: 5px;
+    margin: 7px;
+}
+#navbar ul{
+    display:flex;
+    align-items:center;
+    flex-wrap: wrap;
+}
+#navbar ul li{
+
+    list-style:none;
+    font-size:1.3rem;
+    margin:0px 8px;
+    padding:6px 2px;
+    
+}
+#navbar ul li a{
+    color:rgba(0, 0, 0, 0.849);
+    display:block;
+    padding:8px;
+    text-decoration: none;
+    font-family: 'Potta One';
+    
+    
+}
+#navbar ul li a:hover{
+    /* background-color: rgb(121, 117, 117); */
+    color:rgb(255, 14, 14);
+    /* border-radius:30px; */
+    /* display:block; */
+    /* padding:8px; */
+    text-decoration: none;
+    
+    
+}
+
+
+
+
+/* Home section */
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:10px 20px;
+    height:400px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+#home::before{
+    content:"";
+    background:url("wallpaperflare.com_wallpaper\ \(35\).jpg") no-repeat center center/cover;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.8;
+}
+
+#home h1{
+    font-size: 2rem;
+    color:black;
+    text-align: center;
+    font-family: 'Frijole';
+}
+#home p{
+    font-size: 1.2rem;
+    color:black;
+    text-align: center;
+    font-family: 'Frijole';
+}
+
+/* utility classes */
+.primary{
+    font-size: 1.8rem;
+    padding:12px;
+}
+.btn{
+    padding:5px 15px;
+    margin:20px 20px;
+    background-color: rgb(187, 184, 184);
+    color:rgb(19, 18, 18);
+    border-radius:20px;
+    font-size: 1.5rem;
+    outline: none;
+    box-shadow: 4px 4px 20px rgb(5, 5, 5),inset 2px 2px 50px rgb(3, 3, 3);
+    font-family: 'Megrim';
+}
+.btn:hover{
+    padding:5px 15px;
+    margin:20px 20px;
+    background-color: rgb(5, 5, 5);
+    color:rgb(255, 255, 255);
+}
+
+
+
+/* services */
+#content{
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    /* border:2px solid red; */
+    margin-top:40px;
+    justify-content:center;
+    
+    
+}
+#content h1 {
+    font-size: 2rem;
+    color:rgb(255, 243, 220);
+    text-align: left;
+    font-family: 'Frijole';
+    margin-top: 70px;
+    padding-left: 30px;
+}
+#content .box{
+    
+    position:relative;
+    display:flex;
+    height:10rem;
+    /* width:18rem; */
+    background-color: rgba(0, 0, 0, 0.562);
+    border:2px solid rgb(14, 13, 13);
+    color:rgb(255, 255, 255);
+    margin:20px;
+    padding:10px;
+    border-radius: 20px;
+    /* text-shadow: 4px 4px 4px rgb(196, 196, 196); */
+    box-shadow:10px 10px 6px rgba(255, 255, 255, 0.26);
+    /* transition: all 1s ease 0s ;property duration time-function delay */
+    
+    
+}
+#content .box h3{
+    font-size: 1.8rem;
+    
+    color:rgb(255, 122, 122);
+    font-family: 'Frijole';
+}
+#content .box p{
+    font-size: 1rem;
+    color:rgb(255, 255, 255);
+    font-family: 'Frijole';
+}
+
+#content::before{
+    content: "";
+    background:url("pexels-isabella-mendes-1304469.jpg") no-repeat center center/cover;
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity:1;
+}
+
+#content .cnt{
+    text-align: end;
+}
+#content .box img{
+    height:100%;
+    width:30%;
+    /* border-top-left-radius:120px;
+    border-bottom-left-radius:15px; */
+    border-radius:15px;
+    
+}
+
+footer{
+    border:2px solid grey;
+    background-color: black;
+    color:white;
+    align-items: center;
+    position:relative;
+    bottom:0px;
+}
+
